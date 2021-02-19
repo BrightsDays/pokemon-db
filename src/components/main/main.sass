@@ -1,0 +1,32 @@
+@import '../app/app'
+    
+.main
+    text-align: center
+    max-width: 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    gap: 20px
+    justify-content: center
+
+    &__card
+        display: block
+        width: 200px
+        height: 200px
+        background-color: $lightgrey
+        border-radius: 5px
+        text-decoration: none
+        padding: 10px
+        transition: all .5s
+
+        &:hover,&:focus
+            transform: scale(1.08)
+
+    &__image
+        width: 100%
+        max-width: 158px
+
+    &__name
+        font-weight: bold
+        font-size: 1.2em
+        color: $black
